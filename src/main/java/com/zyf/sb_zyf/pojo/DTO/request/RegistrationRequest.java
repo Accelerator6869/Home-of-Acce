@@ -35,12 +35,14 @@ public class RegistrationRequest {
     // 其他字段及 Getter/Setter...
 
     //获取用户名
-    public @NotBlank(message = "用户名不能为空") @Size(min = 4, max = 20, message = "用户名长度4-20位") String getUsername() {
+    public @NotBlank(message = "用户名不能为空")
+    @Size(min = 4, max = 20, message = "用户名长度4-20位") String getUsername() {
         return username;
     }
 
     //设置用户名
-    public void setUsername(@NotBlank(message = "用户名不能为空") @Size(min = 4, max = 20, message = "用户名长度4-20位") String username) {
+    public void setUsername(@NotBlank(message = "用户名不能为空")
+                            @Size(min = 4, max = 20, message = "用户名长度4-20位") String username) {
         this.username = username;
     }
 
